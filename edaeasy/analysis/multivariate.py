@@ -30,6 +30,7 @@ class MultivariateAnalysis(Analysis):
 
     def generate_report(self) -> None:
         """Generate analysis report."""
+        display(HTML('<h1>Multivariate Analysis</h1>'))
         if self.problem_type == 'classification':
             sections = [
                 ('Correlation Matrix', self.correlation),
